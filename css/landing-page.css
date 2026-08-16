@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-image: url(../img/jundo-bg-marrom.png);
+    font-family: 'Montserrat', sans-serif;
+}
+ion-icon{
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 1em;
+}
+.lado-a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    max-width: 90%;
+    font-family: "Kalnia";
+    font-size: 3em;
+    align-items: center;
+    color: #7d2e2e;
+}
+.subtitulo{
+    padding: -0.2em;
+    font-size: 0.7em;
+    color: #2c0101;
+}
+.descricao{
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-family:"Montserrat";
+    font-size: 1em;
+    color: #2c0101;
+}
+.descubra{
+    align-items: center;
+    font-family: "Kalnia";
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color:#7d2e2e;
+    height: 4em;
+    width: 15em;
+    border: none;
+    border-radius: 99px;
+    transition: all 0.2s;
+}
+.descubra:hover{
+    background-color: #b14a4a;
+}
+
+.img-principal{
+    width: 8em;
+}
+
+@media(min-width: 640px){
+    .conteudo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .lado-a{
+        display: flex;
+        justify-content: left;   
+        align-items: start;
+        max-width: 50%; 
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+   }
+   .lado-b{
+        flex-direction: row;
+        max-width: 50%;
+    }
+
+    .titulo{
+        max-width: 90%;
+        font-size: 4em;
+        white-space: nowrap;
+    }
+    .subtitulo{
+        max-width: 90%;
+        font-size: inherit;
+        padding: 0;
+        color: #7d2e2e;
+    }
+    .descricao{
+        margin-top: 2.3em;
+        margin-bottom: 2.3em;
+        font-size: 1.2em;
+    }
+    .descubra{
+        height: 4em;
+        width: 10em;
+        font-size: 0.85em;
+    }
+    .img-principal{
+        width: 20em;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+    .titulo{
+        font-size: 3.5em;
+    }
+    .descricao{
+        font-size: 1em;
+    }
+    .img-principal{
+        width: 10em;
+    }
+}
