@@ -6,33 +6,128 @@
     <title>Jundo | 純度</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/landing-page.css">
-    <link rel="stylesheet" href="css/cabecalho.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <img class="logo" src="img/logo-jundo.png" alt="Logo da Jundo"></li>
-        <nav>
-            <ul class="cabecalho-menu">
-                <li class="cabecalho-itens"><a href="#">Produtos</a></li>
-                <li class="cabecalho-itens"><a href="#">Pacotes</a></li>
-                <li class="cabecalho-itens"><a href="#">Sobre nós</a></li>
-            </ul>
-        </nav>
+
+        <div>
+            <img class="logo" src="img/logo-jundo.png" alt="Logo da Jundo">
+        </div>
+
+        <div>
+            <nav>
+                <ul class="cabecalho-menu">
+                    <li class="cabecalho-itens"><a href="#">Produtos</a></li>
+                    <li class="cabecalho-itens"><a href="#">Pacotes</a></li>
+                    <li class="cabecalho-itens"><a href="#">Sobre nós</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu">
+            <button class="botao-header" id="botao-carrinho">
+                <ion-icon name="cart"></ion-icon>
+            </button>
+            <button class="botao-header" id="botao-menu">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+        </div>
+
     </header>
 
     <main>
-        <section class="conteudo">
+
+        <section id="chamada">
             <div class="lado-a">
                 <h1 class="titulo">Sua pele pura<br><span class="subtitulo">como nunca antes</span></h1>
-                <p class="descricao">A Jundo é uma marca japonesa de cosméticos desenvolvida para restaurar a pele a sua condição natural.<br>Usando técnicas milenares, oferecemos os melhores tratamentos naturais para seu bem estar.</p>
+                <p class="descricao">
+                    A Jundo é uma marca japonesa de cosméticos desenvolvida para restaurar 
+                    a pele a sua condição natural.
+                </p>
+                <p class="descricao">
+                    Usando técnicas milenares, oferecemos os melhores tratamentos naturais 
+                    para seu bem estar.
+                </p>
                 <button class="descubra">Descubra</button>
             </div>
             <div class="lado-b">
                 <img class="img-principal" src="img/hidratante-sakura.png" alt="">
             </div>
         </section>
-        <!--Mudar o alt para aquele negócio q é fundamantal-->
+
+        <section>
+            <h2 class="topico">Produtos</h2>
+            <div id="produtos">  
+
+                <div class="card-produto">
+                    <img class="card-produto-img" src="img/hidratante-sakura.png">
+                    <p class="card-titulo">Perfume</p>
+                    <p class="card-descricao">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+
+                <div class="card-produto">
+                    <img class="card-produto-img" src="img/hidratante-sakura.png">
+                    <p class="card-titulo">Creme hidratante</p>
+                    <p class="card-descricao">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a mauris ligula. 
+                    </p>
+                </div>
+
+                <div class="card-produto">
+                    <img class="card-produto-img" src="img/hidratante-sakura.png">
+                    <p class="card-titulo">Gloss labial</p>
+                    <p class="card-descricao">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="topico">Avaliacões</h2>
+            <div id="avaliacoes">
+
+                <div class="card-avaliacao">
+                    <p class="card-aspas">"</p>
+                    <p class="card-avaliacao-texto" >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aenean nisi turpis, vulputate sed vulputate cursus, 
+                        venenatis in orci. 
+                    </p>
+                    <p class="card-autor">Juliana Faria</p>
+                </div>
+
+                <div class="card-avaliacao">
+                    <p class="card-aspas">"</p>
+                    <p class="card-avaliacao-texto">
+                        Lorem ipsum finibus vulputate risus in dapibus. 
+                        Sed ornare scelerisque risus, non tempor felis tincidunt ut. 
+                    </p>
+                    <p class="card-autor">Heloisa de Lima</p>
+                </div>
+
+                <div class="card-avaliacao">
+                    <p class="card-aspas">"</p>
+                    <p class="card-avaliacao-texto">
+                        Lorem ipsum auctor diam vel sem rhoncus interdum nec a lectus. 
+                        In id nisl egestas mauris convallis aliquam eu id velit. 
+                        Nullam vulputate purus ac nunc sollicitudin, non dictum odio
+                        blandit. 
+                    </p>
+                    <p class="card-autor">Marcella Costa</p>
+                </div>
+
+            </div>
+        </section>
+
     </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

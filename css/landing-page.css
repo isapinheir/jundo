@@ -5,13 +5,73 @@ body{
     background-image: url(../img/jundo-bg-marrom.png);
     font-family: 'Montserrat', sans-serif;
 }
+main{
+    margin: 2rem;
+}
 ion-icon{
-    font-size: 3rem;
-    color: black;
+    font-size: 2rem;
+    color: #fafafa;
     cursor: pointer;
 }
+    
+/* HEADER */
 
-.conteudo{
+.cabecalho{
+    width: 100%;
+    margin-bottom: 3em;
+    font-family: "Kalnia";
+    font-size: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #448A49;
+    box-shadow:10px 0px 10px #2e2e2e;
+    z-index: 99;
+}
+.logo{
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 4em;
+    position: relative;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
+.cabecalho-menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #265c2a;
+}
+.cabecalho-itens{
+    display: inline-block;
+    font-size: 0.7em;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+}
+.cabecalho-itens a{
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+}
+.menu{
+    padding: 1.5em;
+}
+.botao-header{
+    border: none;
+    background-color: transparent;
+}
+
+/* CHAMADA */
+
+#chamada{
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -27,70 +87,182 @@ ion-icon{
     justify-content: center;
     align-items: center;
 }
+.lado-b img{
+    width: 13rem;
+}
 .titulo{
-    max-width: 90%;
     font-family: "Kalnia";
-    font-size: 3em;
-    align-items: center;
+    font-size: 3.4rem;
+    line-height: 3rem;
     color: #7d2e2e;
+    margin-bottom: 1rem;
 }
 .subtitulo{
-    padding: -0.2em;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    text-align: center;
     color: #2c0101;
 }
 .descricao{
     align-items: center;
-    margin-top: 3em;
-    margin-bottom: 3em;
     font-family:"Montserrat";
     font-size: 1em;
     color: #2c0101;
+    margin-bottom: 1rem;
 }
 .descubra{
-    align-items: center;
-    font-family: "Kalnia";
-    font-size: 0.7em;
-    text-transform: uppercase;
-    color: #fff;
-    background-color:#7d2e2e;
-    height: 4em;
-    width: 15em;
-    border: none;
-    border-radius: 99px;
-    transition: all 0.2s;
+    display: none;
 }
 .descubra:hover{
     background-color: #b14a4a;
 }
 
-.img-principal{
-    width: 8em;
+/* PRODUTOS */
+
+#produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.topico{
+    margin: 1.3rem;
+    color: #448A49;
+    font-family: "Kalnia";
+    font-size: 1.6rem;
+    text-align: center;
+}
+.card-produto{
+    width: 20rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5%;
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: all .2s
+}
+.card-produto:hover{
+    transform: translateY(-.2rem)
+}
+.card-produto-img{
+    max-width: 40%;
+    border-radius: 5%;
+    background-color: #265c2a;
+}
+.card-titulo{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: "Kalnia";
+    text-transform: uppercase;
 }
 
+/* AVALIACOES */
+
+#avaliacoes{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    justify-content: space-evenly;
+}
+.card-avaliacao{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0.4rem;
+    border-radius: 1rem;
+    background-color: #fafafa;
+    cursor:pointer;
+    transition: all .2s;
+}
+.card-avaliacao:hover{
+    transform: translateY(-.2rem);
+}
+.card-aspas{
+    font-family: "Kalnia";
+    font-size: 5rem;
+}
+.card-avaliacao-texto{
+    margin: 1rem; 
+}
+.card-autor{
+    font-family: "Kalnia";
+}
+
+/* 
+=============
+TELAS GRANDES 
+=============
+*/
+
 @media(min-width: 640px){
-    .conteudo{
+    ion-icon{
+        display: none;
+    }
+    /*HEADER*/
+    .cabecalho{
+        display: flex;
+        position: sticky;
+        width: 100%;
+        height: 7.2em;
+        margin-bottom: 4em;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        padding: 0;
+        margin-left: 2em;
+        width: 7em;
+        position: static;
+    }
+    .cabecalho-menu{
+        background-color: transparent;
+    }
+    .cabecalho-itens{
+        font-size: 1.1em;
+        margin-right: 2em;
+    }
+    .cabecalho-itens:hover{
+        transform:translateY(-.2rem);
+        transition: all 0.3s;
+    }
+    .botao-header:hover{
+        transform:translateY(-.2rem);
+        transition: all 0.3s;
+    }
+
+    /* MAIN */
+    #chamada{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
     .lado-a{
         display: flex;
+        flex-direction: column;
         justify-content: left;   
         align-items: start;
-        max-width: 50%; 
+        min-width: 50%; 
         box-sizing: border-box;
         overflow-wrap: break-word;
    }
    .lado-b{
+        display: flex;
         flex-direction: row;
-        max-width: 50%;
+        min-width: 50%;
+        justify-content: right;
     }
-
     .titulo{
         max-width: 90%;
-        font-size: 4em;
+        font-size: 5em;
         white-space: nowrap;
+        line-height: 4.5rem;
+        margin-bottom: 3rem;
     }
     .subtitulo{
         max-width: 90%;
@@ -99,28 +271,81 @@ ion-icon{
         color: #7d2e2e;
     }
     .descricao{
-        margin-top: 2.3em;
-        margin-bottom: 2.3em;
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     .descubra{
+        display: block;
+        align-items: center;
+        font-family: "Kalnia";
+        text-transform: uppercase;
+        color: #fff;
+        background-color:#7d2e2e;
         height: 4em;
-        width: 10em;
+        width: 15em;
+        border: none;
+        border-radius: 99px;
+        margin-top: 2rem;
+        transition: all 0.2s;
         font-size: 0.85em;
     }
-    .img-principal{
+    .lado-b img{
         width: 20em;
+    }
+    #produtos{
+        flex-direction: row;
+        padding: 3rem;
+    }
+    .card-produto{
+        width: 25rem;    
+    }
+    .card-titulo{
+        font-size: 1.5rem;
+    }
+    .card-descricao{
+        font-size: 1.1rem;
     }
 }
 
+/* 
+=============
+TELAS MÉDIAS 
+=============
+*/
+
 @media (min-width: 640px) and (max-width: 1024px) {
+    main{
+        margin: 1.6rem;
+    }
+    ion-icon{
+        font-size: 2.5rem;
+    }
+    /* HEADER */
+    .logo{
+        width: 5em;
+    }
+    .cabecalho-menu{
+        background-color: transparent;
+    }
+    .cabecalho-itens{
+        font-size: .8em;
+    }
+    /* MAIN */
     .titulo{
-        font-size: 3.5em;
+        font-size: 2.7em;
     }
     .descricao{
         font-size: 1em;
     }
-    .img-principal{
+    .lado-b img{
         width: 10em;
+    }
+    .card-produto{
+        width: 18rem;
+    }
+    .card-titulo{
+        font-size: 1.2rem;
+    }
+    .card-descricao{
+        font-size: .8rem;
     }
 }
