@@ -124,13 +124,14 @@ ion-icon{
     align-items: center;
 }
 .topico{
-    margin: 1.3rem;
+    margin: 1.5rem;
     color: #448A49;
     font-family: "Kalnia";
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
 }
 .card-produto{
+    display: flex;
     width: 20rem;
     padding: 1rem;
     margin: 0.5rem;
@@ -142,8 +143,12 @@ ion-icon{
 .card-produto:hover{
     transform: translateY(-.2rem)
 }
+.container-card-produto{
+    align-content: center;
+}
 .card-produto-img{
-    max-width: 40%;
+    width: 5rem;
+    margin-right: 1rem;
     border-radius: 5%;
     background-color: #265c2a;
 }
@@ -169,7 +174,7 @@ ion-icon{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 3rem;
     padding-bottom: 1rem;
     margin: 0.4rem;
     border-radius: 1rem;
@@ -183,6 +188,7 @@ ion-icon{
 .card-aspas{
     font-family: "Kalnia";
     font-size: 5rem;
+    line-height: 0;
 }
 .card-avaliacao-texto{
     margin: 1rem; 
@@ -291,18 +297,33 @@ TELAS GRANDES
     .lado-b img{
         width: 20em;
     }
+    .topico{
+        font-size: 3.5em;
+    }
     #produtos{
         flex-direction: row;
         padding: 3rem;
     }
     .card-produto{
-        width: 25rem;    
+        width: 25rem;
+        display: block; 
     }
     .card-titulo{
         font-size: 1.5rem;
     }
     .card-descricao{
         font-size: 1.1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    /* Avaliações */
+    #avaliacoes{
+        flex-direction: row;
+        padding: 3rem;
+    }
+    .card-avaliacao-texto{
+        font-size: 1.1rem;
+        margin: 1rem;
     }
 }
 
